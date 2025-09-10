@@ -44,8 +44,8 @@ namespace ProjeApotek.Controllers
         }
         private bool CheckUser(UserModel userModel)
         {
-            //Hard coded. ToDo check in database
-            if (userModel.UserName=="admine" && userModel.Password == "pwd")
+            //Hard coded. 
+            if (userModel.UserName=="admin" && userModel.Password == "pwd")
                 return true;
 
             else

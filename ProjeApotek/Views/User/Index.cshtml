@@ -13,9 +13,11 @@
             <td><label for="Password">Lösenord:</label></td>
             <td>@Html.PasswordFor(m => m.Password)</td>
         </tr>
-        <tr style="display:inline-block;">
+        <tr style="display:inline-block; gap:10px">
             <td> 
-                <label for="RememberMe" style="display:inline-block;">Kom ihåg mig</label>
+                <label for="RememberMe" style="display:inline-block; me-6">Kom ihåg mig</label>
+            </td>
+            <td>
                 <input type="checkbox" id="RememberMe" name="RememberMe" style="display:inline-block;" />
             </td>
         </tr>
@@ -26,7 +28,7 @@
         </tr>
     </table>
 </form>
-<h2>
+<h2 class="text-danger m-6">
     @ViewBag.ErrorMessage
 </h2>
 
