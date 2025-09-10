@@ -21,4 +21,4 @@ https://github.com/user-attachments/assets/f47f9770-501a-4e86-88bb-05778e0876f4
 1. **Framework**: ASP.NET Core 6 MVC
 2. **Databas**: SQLite
 3. **Autentisering**
-4. **Frontend**: Bootstrap
+4. **Frontend**: CSS styling
