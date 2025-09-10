@@ -1,4 +1,4 @@
-# ProjeApotek-NET6 ASP-NET MVC
+# ProjeApotek - ASP-NET Core 6 MVC
 
 Pharmacy management system - A simple CRUD application built with ASP.NET Core 6 MVC including login functionality.
 
