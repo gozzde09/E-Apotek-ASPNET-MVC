@@ -1,6 +1,7 @@
 # ProjeApotek - ASP-NET Core 6 MVC
 
 Pharmacy management system - A simple CRUD application built with ASP.NET Core 6 MVC including login functionality.
+Built i 2023 October as a school project
 
 ## Funktioner
 
