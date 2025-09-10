@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model Medicin
+<div class="form">
+    <h2>Beställa en ny medicin</h2>
+    <form asp-action="Create" class="form">
+        <div>
+            Varumärke: <input asp-for="Titel" />
+        </div>
+        <div>
+            Produktfakta: <input asp-for="Innehåll" />
+        </div>
+        <div>
+            Dosage: <input asp-for="Dosage" />
+            @*  <select asp-for="Dosage" asp-items="ViewBag.DosId"> </select> *@
+        </div>
+        <div>
+            <input type="submit" value="Spara" class="knapp create" />
+        </div>
+
+    </form>
+</div>

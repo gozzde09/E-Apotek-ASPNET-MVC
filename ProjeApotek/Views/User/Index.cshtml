@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model UserModel
+<h2> Inloggningssidan</h2>
+<form asp-action="Index" asp-route-returnurl="@ViewData["ReturnUrl"]">
+    <table class="form">
+        <tr>
+            <td><label for="UserName">Användarnamn:</label></td>
+            <td>@Html.EditorFor(m => m.UserName)</td>
+        </tr>
+        <tr>
+            <td><label for="Password">Lösenord:</label></td>
+            <td>@Html.PasswordFor(m => m.Password)</td>
+        </tr>
+        <tr style="display:inline-block;">
+            <td> 
+                <label for="RememberMe" style="display:inline-block;">Kom ihåg mig</label>
+                <input type="checkbox" id="RememberMe" name="RememberMe" style="display:inline-block;" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Logga in" class="knapp" />
+            </td>
+        </tr>
+    </table>
+</form>
+<h2>
+    @ViewBag.ErrorMessage
+</h2>
+
+

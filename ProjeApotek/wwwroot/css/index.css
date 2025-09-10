@@ -1,0 +1,325 @@
+﻿/*
+==================================================================================
+                                    Globala regler
+==================================================================================
+*/
+@font-face {
+    font-family: "RobotoSlab";
+    src: url(fonts/Roboto_Slab/RobotoSlab-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+}
+
+/*
+==================================================================================
+BODY + RUBRIKER + IMG
+==================================================================================
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", "Open Sans", Helvetica, sans-serif;
+    background-color: #fefefe;
+    color: #494949;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    background: linear-gradient(to top, #1d6453,2%, #fefefe);
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 1.7em;
+    font-family: "RobotoSlab", "Open Sans", Helvetica, sans-serif;
+    color: #2f2f2f;
+    text-align: center;
+    margin: 30px 0 0;
+}
+
+h2 {
+    color: #1d6453;
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-weight:bolder;
+    text-align: center;
+}
+
+    h2 > a, table a {
+        color: #1d6453;
+    }
+
+
+/* =============== Länk och Button dekoration i Header Footer Aside ===============*/
+.menu,
+.social-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.menu {
+    margin-top: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    color: #fefefe;
+    font-size: 1.2em;
+}
+
+a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.knapp {
+    background-color: #1d6453;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 45px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #fefefe;
+    text-align: center;
+}
+
+    .knapp a {
+        color: #fefefe;
+    }
+
+        .knapp a:focus,
+        .knapp a:hover,
+        .knapp:hover {
+            color: #1d6453;
+            cursor: pointer;
+            background-color: #2aa948;
+        }
+
+.action, .logOut {
+    box-shadow: 3px 3px 0px 0px #2aa948;
+    margin:30px auto;
+}
+.logOut {
+    margin: 30px 100px;
+}
+.create {
+    float:right;
+}
+/*
+==================================================================================
+HEADER + FOOTER
+==================================================================================
+*/
+header,
+footer {
+    background-color: #1d6453;
+    color: #fefefe;
+    height: auto;
+}
+
+.line {
+    height: 17px;
+    background: #1d6453;
+    color: #fefefe;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 3px;
+}
+
+.logo {
+    margin: -40px 10px 10px;
+}
+
+.fa {
+    padding-right: 4px;
+}
+
+.knapp {
+    padding: 6px;
+    margin: 15px 15px 10px;
+    margin:15px auto;
+}
+/*
+==================================================================================
+SERVICES 1
+==================================================================================
+*/
+#services1 {
+    margin: 40px auto;
+}
+
+    #services1 img {
+        width: 35px;
+        height: 40px;
+        vertical-align: middle;
+        color: white;
+        background-color: #1d6453;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+.service-item1 {
+    border-radius: 27px;
+    background: #fff;
+    padding: 15px;
+    margin: 60px 30px;
+    box-shadow: 8px 8px 0px 0px #1d6453;
+    text-align: center;
+}
+
+.icons {
+    background: #1d6453;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.icons,
+#länkar ul li {
+    display: inline-block;
+}
+
+/*
+==================================================================================
+                      BESTÄLLNINGSSSIDA -undersidor + INLOGGNINGSSIDA
+==================================================================================
+*/
+
+.form h2 {
+    background: #1d6453;
+    box-shadow: 0 0 15px #c8a6ce;
+    color: #fefefe;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 0;
+    width: 100%;
+}
+
+.form {
+    padding: 10px;
+    margin: 30px auto;
+    max-width: 75%;
+    border: 1px dotted #1d6453;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #1d6453;
+    align-self: center;
+}
+
+label,input {
+    display: block;
+    color: #333;
+    border-radius: 5px;
+    margin: 10px auto;
+    font-family: "Roboto", "Open Sans", Helvetica, sans-serif;
+    background-color: #fefefe;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+}
+td {
+    margin:10px;
+}
+input[type="checkbox"] {
+    display: inline-block;
+    margin: 5px;
+}
+
+
+/*
+==================================================================================
+                                 INLOGGNINGSSIDA
+==================================================================================
+*/
+
+#sign h1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 6px 6px 0px 0px #1d6453;
+    border-radius: 27px 0px 0px 27px;
+    margin: auto;
+    padding-right: 20px;
+    font-size: 1em;
+}
+
+#sign {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 30px auto;
+    /* border: 1px dotted #1D6453;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #1D6453;
+  width:75%; */
+}
+
+/*
+==================================================================================
+                                 MEDIAQUERIES
+==================================================================================
+*/
+
+/* RESPONSIV 1 */
+@media screen and (min-width: 610px) {
+    .logo {
+        height: 100px;
+        margin: -40px 0 10px 15px;
+    }
+
+    footer + .line {
+        margin-top: 10px;
+    }
+
+    #services1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icons {
+        grid-area: icon;
+        border-radius: 27px 0px 0px 27px;
+        height: 100%;
+        width: 100%;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* RESPONSIV 2 */
+@media (min-width: 900px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* RESPONSIV 3 */
+@media (min-width: 1000px) {
+    #services1 {
+        max-width: 95%;
+    }
+}

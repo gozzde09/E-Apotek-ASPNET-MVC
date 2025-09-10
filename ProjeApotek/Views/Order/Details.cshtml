@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model Medicin
+<div class="form">
+    <h2>DETAILS</h2>
+    <div>
+        <strong>Varumärke:</strong>
+        @Html.DisplayFor(model => model.Titel)
+    </div>
+    <div>
+        <strong>Produktfakta:</strong>
+        @Html.DisplayFor(model => model.Innehåll)
+    </div>
+    <div>
+        <strong>Dosering:</strong>
+        @Html.DisplayFor(model => model.Dosage)
+    </div>
+</div>
+
+

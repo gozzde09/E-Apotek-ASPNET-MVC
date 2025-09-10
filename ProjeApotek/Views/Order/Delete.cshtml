@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model Medicin
+<div class="form">
+    <h2>RADERA EN BESTÄLLNING</h2>
+    <form asp-action="Delete" class="form">
+        @*   <input typeof="hidden" asp-for="Id" /> *@
+        <div>
+            <strong>Varumärke</strong>
+            @Html.DisplayFor(model => model.Titel)
+        </div>
+        <div>
+            <strong>Produktfakta</strong>
+            @Html.DisplayFor(model => model.Innehåll)
+        </div>
+        <div>
+            <strong>Dosage</strong>
+            @Html.DisplayFor(model => model.Dosage)
+        </div>
+
+        <div>
+            <input type="submit" value="Radera" class="knapp action" />
+        </div>
+
+    </form>
+</div>
+
+

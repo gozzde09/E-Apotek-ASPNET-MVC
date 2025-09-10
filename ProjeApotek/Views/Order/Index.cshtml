@@ -1,0 +1,41 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model List<ProjeApotek.Models.Medicin>
+
+<!-- FORMULÄR -->
+
+<fieldset class="form">
+    <h2>Beställningsformulär</h2>
+    <table class="table">
+        <thead>
+            <tr style="font-weight:bold">
+                <td> Varumärke </td>
+                <td> Produktfakta </td>
+                <td> Visa mer om medicin </td>
+                <td> Ändra medicin </td>
+                <td> Radera medicin</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var medicin in Model)
+            {
+                <tr>
+                    <td> @Html.DisplayFor(modelItem => medicin.Titel)</td>
+                    <td> @Html.DisplayFor(modelItem => medicin.Innehåll)</td>
+                    <td> <a asp-action="Details" asp-route-id=@medicin.Id>Visa mer info</a></td>
+                    <td> <a asp-action="Edit" asp-route-id=@medicin.Id class="knapp">Ändra</a></td>
+                    <td> <a asp-action="Delete" asp-route-id=@medicin.Id class="knapp">Radera</a></td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+    <div>  <a asp-action="Create" class="knapp action"> Lägg till ny medicin</a> </div>
+</fieldset>
+<p>
+    <a asp-action="SignOutUser" class="knapp logOut"> Logga ut</a>
+</p>
+
+
+
