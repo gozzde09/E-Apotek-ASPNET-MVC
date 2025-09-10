@@ -1,7 +1,7 @@
 # ProjeApotek - ASP-NET Core 6 MVC
 
-Pharmacy management system built in 2023 October as a school project. It is not perfect, i was a beginner :) 
-A simple CRUD application built with ASP.NET Core 6 MVC including login functionality. 
+Pharmacy management system built in 2023 October as a school project. It is not perfect, I was a beginner then :) 
+A fullstack CRUD application built with ASP.NET Core 6 MVC including login functionality. 
 
 Username: admin 
 
